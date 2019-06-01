@@ -18,6 +18,10 @@ font-face{
   font-family: SourceSansPro-ExtraLight;
   src: url(source-sans-pro/SourceSansPro-ExtraLight.otf);
 }
+@font-face{
+  font-family: SourceSansPro-Light;
+  src: url(source-sans-pro/SourceSansPro-Light.otf);
+}
 .img {
 	float: left;
 	margin-left: -15px !important;
@@ -32,17 +36,12 @@ font-face{
 	float: right;
 	position: relative;
 }
-.login p {
-	font-family: SourceSansPro-ExtraLight;
-	font-size: 23px;
-	letter-spacing: 3px;
-}
 .login h5 {
 	color: #0005;
 }
 .username h6 {
 	font-size: 15px;
-	color: #0005;
+	color: #0009 !important;
 	margin-bottom: 0;
 }
 .username {
@@ -51,6 +50,7 @@ font-face{
 }
 .username input {
 	width: 80%;
+	border: 1px solid #0005;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -58,7 +58,7 @@ font-face{
 }
 .pw h6 {
 	font-size: 15px;
-	color: #0005;
+	color: #0009;
 	margin-bottom: 0;
 }
 .pw {
@@ -67,8 +67,40 @@ font-face{
 }
 .pw input {
 	width: 80%;
+	border: 1px solid #0005;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	margin-top: -20px;
+}
+.cek {
+	width: 250px;
+	height: 35px;
+}
+.help p {
+	font-family: SourceSansPro-Light;
+	font-size: 13px;
+}
+p#me {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: -4px;
+}
+.help a {
+	position: relative;
+	font-family: SourceSansPro-Light;
+	font-size: 13px;
+	text-decoration: none;
+}
+.btn {
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+.btn  button .lg {
+	position: relative;
+	border: none;
+	width: 150px;
+	height: 30px;
+	color: #FEFEFE;
 }
