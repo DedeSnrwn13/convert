@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+  font-family: SourceSansPro-ExtraLight;
+  src: url(assets/font/source-sans-pro/SourceSansPro-ExtraLight.otf);
+}
+nav.navbar {
+  z-index: +100000;
+  font-family: SourceSansPro-ExtraLight;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0;
+  left: 0;
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+  padding: 5px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #4592a5;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+}
+nav ul li a:hover {
+  color: #000;
+  transform: 0.5s ease;
+}
+.user {
+  position: relative;
+  float: right;
+  margin-left: 0px !important;
+}
+.user ul li {
+  position: relative;
+  display: flex;
+  transition: 0.5s;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.user ul li a {
+  display: block;
+  text-decoration: none;
+}
+.user ul li ul {
+  position: absolute;
+  display: block;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  padding: 0 10px;
+}
+.user ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.imgs {
+  float: right;
+  position: relative;
+}
+
+.imgs img{
+  float: right;
+  position: relative;
+}
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.search {
+  width: 300px;
+  position: absolute;
+  float: left;
+  margin-left: 250px !important;
+}
+
+input#inp1 {
+  float: left;
+  text-align: left;
+}
+
+.search input#inp1 {
+  margin-left: 10px !important;
+  align-items: left !important;
+  float: left !important;
+}
+
+.search input#inp1::-webkit-input-placeholder {
+  font-size: 15px;
+}
+.search img {
+  position: absolute;
+  float: left;
+  margin-right: 20px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.user ul {
+  display: flex;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  left: 0;
+}
+
+.user ul li {
+  position: relative;
+  display: block;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.user ul li a {
+  display: inline-block;
+}
+
+.user ul li ul {
+  position: absolute;
+  display: block;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+}
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 48px 0 0; 
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+.ic1 {
+  cursor: pointer;
+  position: absolute;
+  right: 120px !important;
+  float: right !important;
+}
+.ic1 img {
+  margin: 10px !important;
+}
+.user {
+  position: relative;
+  float: right;
+}
+.container-fluid {
+  z-index: +100;
+}
+.nav-item span {
+  line-height: 10px;
+}
+section.normal {
+  position: relative;
+  margin-top: 200px;
+}
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 133px; /* Space for fixed navbar */
+}
+
+@media (min-width: 768px) {
+  [role="main"] {
+    padding-top: 48px; /* Space for fixed navbar */
+  }
+}
+
+.bg {
+  background: #f0f0f7;
+}
+.tview {
+  float: left;
+  background: #fff;
+}
+.tview h6 {
+  float: left;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+.tview h5 {
+  float: left;
+  width: 50px;
+  margin-top: 20px;
+}
+
+.tview span {
+  font-size: 10px;
+}
+
+.tview img#percent{
+  float: left;
+  width: 10px;
+  margin-top: 10px;
+}
+
+.tview img#grafic{
+  width: 120px;
+  float: left;
+}
+
+.tsold {
+  float: left;
+  background: #fff;
+}
+
+.tsold h6 {
+  float: left;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+.tsold h5 {
+  float: left;
+  width: 50px;
+  margin-top: 20px;
+}
+
+.tsold span {
+  font-size: 10px;
+}
+
+.tsold img#percent2{
+  float: left;
+  width: 10px;
+  margin-top: 10px;
+}
+
+.tsold img#grafic2{
+  width: 120px;
+  float: left;
+}
+
+.tearn {
+  float: left;
+  background: #fff;
+}
+
+.tearn h6 {
+  float: left;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+.tearn h5 {
+  float: left;
+  width: 50px;
+  margin-top: 20px;
+}
+
+.tearn span {
+  font-size: 10px;
+}
+
+.tearn img#percent3{
+  float: left;
+  width: 10px;
+  margin-top: 10px;
+}
+
+.tearn img#grafic3{
+  width: 120px;
+  float: left;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+.clearfix {
+  clear: both;
+}
+.teble {
+  margin-top: 50px;
+}

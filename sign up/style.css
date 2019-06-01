@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+  font-family: SourceSansPro-Black;
+  src: url(source-sans-pro/SourceSansPro-Black.otf);
+}
+font-face{
+  font-family: SourceSansPro-BlackIt;
+  src: url(source-sans-pro/SourceSansPro-BlackIt.otf);
+}
+font-face{
+  font-family: SourceSansPro-Bold;
+  src: url(source-sans-pro/SourceSansPro-Bold.otf);
+}
+@font-face{
+  font-family: SourceSansPro-ExtraLight;
+  src: url(source-sans-pro/SourceSansPro-ExtraLight.otf);
+}
+.img {
+	float: left;
+	margin-left: -15px !important;
+	position: absolute;
+}
+.img img {
+	align-items: left;
+	width: 100%;
+	height: 100vh;
+}
+.login {
+	float: right;
+	position: relative;
+}
+.login p {
+	font-family: SourceSansPro-ExtraLight;
+	font-size: 23px;
+	letter-spacing: 3px;
+}
+.login h5 {
+	color: #0005;
+}
+.username h6 {
+	font-size: 15px;
+	color: #0005;
+	margin-bottom: 0;
+}
+.username {
+	position: relative;
+	height: 30px;
+}
+.username input {
+	width: 80%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-top: -20px;
+}
+.pw h6 {
+	font-size: 15px;
+	color: #0005;
+	margin-bottom: 0;
+}
+.pw {
+	position: relative;
+	height: 30px;
+}
+.pw input {
+	width: 80%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-top: -20px;
+}
