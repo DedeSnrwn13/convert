@@ -155,7 +155,7 @@ body {
 .navbar .search-wrapper:before {
   content: "";
   position: absolute;
-  background: url("./assets/images/icons/icon_search(1).svg");
+  background: url("../images/icons/icon_search(1).svg");
   width: 16px;
   height: 16px;
   left: 30px;
@@ -310,7 +310,13 @@ body {
     padding-top: 48px; /* Space for fixed navbar */
   }
 }
-
+.triple-box {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: calc(100% / 3 - 16px);
+  position: relative;
+}
 .bg {
   background: #f0f0f7;
 }
@@ -318,12 +324,14 @@ body {
   float: left;
   background: #fff;
 }
+
 .tview h6 {
   float: left;
   margin-top: 20px;
-  font-size: 13px;
+  font-size: 15px;
   color: #777;
 }
+
 .tview h5 {
   float: left;
   width: 50px;
@@ -334,13 +342,13 @@ body {
   font-size: 10px;
 }
 
-.tview img#percent{
+.tview img#percent2{
   float: left;
   width: 10px;
   margin-top: 10px;
 }
 
-.tview img#grafic{
+.tview img#grafic2{
   width: 120px;
   float: left;
 }
@@ -353,7 +361,7 @@ body {
 .tsold h6 {
   float: left;
   margin-top: 20px;
-  font-size: 13px;
+  font-size: 15px;
   color: #777;
 }
 
@@ -386,7 +394,7 @@ body {
 .tearn h6 {
   float: left;
   margin-top: 20px;
-  font-size: 13px;
+  font-size: 15px;
   color: #777;
 }
 
@@ -444,4 +452,12 @@ body {
 }
 .teble {
   margin-top: 50px;
+}
+
+.mr-4, .mx-4 {
+  margin-right: 0 !important;
+}
+#map {
+  width: 320px; 
+  height: 448px;
 }
