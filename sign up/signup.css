@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -36,71 +40,46 @@ font-face{
 	float: right;
 	position: relative;
 }
-.login h5 {
-	color: #0005;
+h4.title {
+	letter-spacing: 5px;
 }
-.username h6 {
-	font-size: 15px;
-	color: #0009 !important;
-	margin-bottom: 0;
+h6.desc {
+	color: #0005;
+	letter-spacing: 0.5px;
 }
 .username {
 	position: relative;
-	height: 30px;
+}
+.username label {
+	font-size: 13px;
 }
 .username input {
-	width: 80%;
-	border: 1px solid #0005;
-	border-top: none;
-	border-left: none;
+	position: absolute;
+	width: 100%;
+	display: block;
 	border-right: none;
-	margin-top: -20px;
-}
-.pw h6 {
-	font-size: 15px;
-	color: #0009;
-	margin-bottom: 0;
+	border-left: none;
+	border-top: none;
+	top: 70px;
+	background-color: transparent;
+	border-bottom: 1px solid #0009;
+	filter: blur(0.3px);
 }
 .pw {
 	position: relative;
-	height: 30px;
+}
+.pw label {
+	font-size: 13px;
 }
 .pw input {
-	width: 80%;
-	border: 1px solid #0005;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	margin-top: -20px;
-}
-.cek {
-	width: 250px;
-	height: 35px;
-}
-.help p {
-	font-family: SourceSansPro-Light;
-	font-size: 13px;
-}
-p#me {
 	position: absolute;
-	margin-left: 20px;
-	margin-top: -4px;
-}
-.help a {
-	position: relative;
-	font-family: SourceSansPro-Light;
-	font-size: 13px;
-	text-decoration: none;
-}
-.btn {
 	width: 100%;
-	height: 30px;
-	position: relative;
-}
-.btn  button .lg {
-	position: relative;
-	border: none;
-	width: 150px;
-	height: 30px;
-	color: #FEFEFE;
+	display: block;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	top: 70px;
+	background-color: transparent;
+	border-bottom: 1px solid #0009;
+	filter: blur(0.3px);
 }

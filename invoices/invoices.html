@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Invoices - Impekable</title>	
+		<link rel="stylesheet" href="./assets/cssinvoices.css">
+		<link rel="stylesheet"  href="./assets/css/bootstrap.min.css">
+		<script src="./assets/js/jQuery.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body class="bg-darkwhite">
+		<nav class="navbar navbar-dark fixed-top bg-white flex-md-nowrap p-0 shadow-sm">
+	  		<a class="navbar-brand col-sm-3 col-md-2 mr-0 f-bold bg-semidarkblue small-sidebar" href="#">IMPEKABLE</a>
+	  		<div class="search-wrapper w-100 position-relative">
+	    		<input class="form-control form-control-dark w-100" type="text" placeholder="Search transactions, invoices or help" aria-label="Search">
+	  		</div>
+	  		<ul class="navbar-nav px-3 bg-white">
+	    		<li class="nav-item text-nowrap">
+	        		<a class="nav-link" href="#">
+	          			<img src="assets/images/icons/icon_help-center-1.svg" alt="">
+	        		</a>
+	    		</li>
+	    		<li class="nav-item text-nowrap">
+		    		<div class="dropdown">
+		           		<a class="nav-link" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/icons/Chat Icon.svg" alt=""></a>
+			            <div class="dropdown-menu position-absolute dropdown-menu-right text-left f-13 f-regular dd-notification" aria-labelledby="dropdownMenuLink">
+				            <div class="container">
+				              <div class="pt-2 pb-1">
+				              <h2 class="f-17">Notifications</h2>
+				            </div>
+			            	<div class="dropdown-divider mt-0"></div>
+			              		<a href="#" class="text-decoration-none">
+				             		<span class="dropdown-item f-13">
+					                	<div class="img-notification mr-3">
+					                  		<img src="./assets/images/icons/david-lee.svg" alt="">
+					                	</div>
+				                		<div class="text-notification">
+				                  			<p><b class="f-bold">David Lee</b> sent you a message.</p>
+				                  			<p class="text-muted">4 min ago.</p>
+				                		</div>
+				              		</span>
+			            		</a>
+			            		<div class="dropdown-divider"></div>
+			            			<a href="#" class="text-decoration-none">
+			              				<span class="dropdown-item f-13">
+			                				<div class="img-notification mr-3">
+			                  					<img src="assets/images/icons/alex-johnson.svg" alt="">
+			                				</div>
+			                				<div class="text-notification">
+			                  					<p><b class="f-bold">Alex Johnson</b> sent you a message.</p>
+			                  					<p class="text-muted">4 min ago.</p>
+			                				</div>
+			              				</span>
+			            			</a>
+			            			<div class="dropdown-divider"></div>
+			            				<a href="#" class="text-decoration-none">
+			              					<span class="dropdown-item f-13">
+			                					<div class="img-notification mr-3">
+			                  						<img src="assets/images/icons/jonathan-chen.svg" alt="">
+			                					</div>
+			                					<div class="text-notification">
+			                  						<p><b class="f-bold">Jonathan Chen</b> sent you a message.</p>
+			                  						<p class="text-muted">4 min ago.</p>
+			                					</div>
+			              					</span>
+			            				</a>
+			            			<div class="dropdown-divider"></div>
+			            				<a href="#" class="text-decoration-none">
+			              					<span class="dropdown-item f-13">
+			                					<div class="img-notification mr-3">
+			                  						<img src="./assets/images/icons/robert-grant.svg" alt="">
+			                					</div>
+			                					<div class="text-notification">
+			                  						<p><b class="f-bold">Robert Grant</b> sent you mail.</p>
+			                  						<p class="text-muted">4 min ago.</p>
+			                					</div>
+			              					</span>
+			            				</a>
+			            			<div class="dropdown-divider"></div>
+			            				<a href="#" class="text-decoration-none">
+			              					<span class="dropdown-item f-13">
+			                					<div class="img-notification mr-3">
+			                  						<img src="./assets/images/icons/david-james.svg" alt="">
+			                					</div>
+			                		<div class="text-notification">
+			                  			<p><b class="f-bold">David James</b> sent you mail.</p>
+			                  			<p class="text-muted">4 min ago.</p>
+			                		</div>
+			              		</span>
+			            	</a>
+			            	<div class="dropdown-divider"></div>
+								<div class=" f-13 text-center py-2">
+			              			<a href="inbox.html" class="text-decoration-none">View all notifications</a>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</div>
+		    	</li>  
+	    		<li class="nav-item text-nowrap">
+	      			<div class="dropdown">
+	        			<a class="nav-link" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/icons/icon_notification.svg" alt=""></a>
+	        			<div class="dropdown-menu position-absolute dropdown-menu-right text-center pt-0 dd-inbox" aria-labelledby="dropdownMenuLink">
+	          				<div class="f-17 bg-white w-100 pt-3 pr-3 pl-3 pb-3">
+	            				<h4 class="f-17 f-regular m-0">Notifications</h3>
+	          				</div>
+		          			<div class="dropdown-divider m-0"></div>
+		          			<div class="text-left bg-light  f-13 f-regular ">
+		            			<a href="#" class="text-decoration-none">
+		             				<div class="dropdown-item px-4 py-2">
+		               			 		<b class="f-bold">David Lee</b>
+		                				<p>Hey, I just read your message. How are you?</p>
+		              				</div>
+		            			</a>
+	            				<div class="dropdown-divider  m-0"></div>
+	            					<a href="#" class="text-decoration-none">
+	              						<div class="dropdown-item px-4 py-2">
+	                						<b class="f-bold">Jonathan Chen</b>
+	                						<p>Are you available later today to chat?</p>
+	              						</div>
+	            					</a>
+	            					<div class="dropdown-divider m-0"></div>
+	            						<a href="#" class="text-decoration-none">
+	              							<div class="dropdown-item px-4 py-2">
+	               								<b class="f-bold">Jackie Berry</b>
+	                							<p>I will be unavailable until after 5pm today. </p>
+	              							</div>
+	            						</a>
+	            					<div class="dropdown-divider  m-0"></div>
+	            						<a href="#" class="text-decoration-none">
+	              							<div class="dropdown-item px-4 py-2">
+	                							<b class="f-bold">Alex Johnson</b>
+	                							<p>How is your day?</p>
+	              							</div>
+	            						</a>
+	            						<div class="dropdown-divider m-0"></div>
+	            							<a href="#" class="text-decoration-none">
+	              								<div class="dropdown-item px-4 py-2">
+										               <b class="f-bold">Maria Cooper</b>
+										               <p>What are you doing this weekend?</p>
+	              								</div>
+	            							</a>
+	            					<div class="dropdown-divider m-0"></div>
+	            					<div class="bg-white w-100 py-2">
+	              						<a class="color-primary text-decoration-none f-12" href="#">See all</a>
+	            					</div>
+	            			</div>
+	        			</div>
+	      			</div>
+	    		</li>
+			    <li class="nav-item text-nowrap">
+			      	<span class="v-line"></span>
+			    </li>
+	    		<li class="text-nowrap user-name">
+	    			<div class="dropdown">
+	        			<a href="#" class="text-dark text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe
+	          				<img src="assets/images/icons/icon_down-arrow-small.svg" alt="">
+	        			</a>
+	        			<div class="dropdown-menu position-absolute dropdown-menu-right text-center f-13 f-regular dd-account" aria-labelledby="dropdownMenuLink">
+	          				<div class="container">
+	          					<span class="dropdown-item f-13"><b class="f-bold">Status :</b> Online</span>
+	          					<div class="dropdown-divider"></div>
+	          					<span class="dropdown-item">Account setting</span>
+	         					<div class="dropdown-divider"></div>
+	          					<span class="dropdown-item">Feedback</span>
+	          					<div class="dropdown-divider"></div>
+	          					<span class="dropdown-item">Logout</span>
+	        				</div>
+	     				 </div>
+	    			</div>
+	    		</li>
+	    		<li class="nav-item">
+	    			<a href="#" class="text-dark text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	        			<img src="assets/images/icons/avatar.svg" class="avatar" alt="">
+	      			</a>
+	    		</li>
+	  		</ul>  
+		</nav>
+	</body>
+</html>

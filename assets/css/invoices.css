@@ -345,30 +345,3 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
-.clearfix {
-  clear: both;
-}
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-.main {
-  padding-top: 50px !important;
-}
-
-.mr-4, .mx-4 {
-  margin-right: 0 !important;
-}
-h3.box-amount {
-  margin: 0;
-  width: 54.95px !important;
-  height: 30px !important;
-}
-.amount-wrapper .amount-wrapper-2 {
-  float: left;
-  width: 54.95px !important;
-  height: 30px !important;
-}
-.amount-wrapper-2 {
-  width: 54.95px !important;
-  height: 54px !important;
-}
