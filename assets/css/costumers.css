@@ -355,24 +355,7 @@ body {
   padding-top: 50px !important;
 }
 
-.mr-4, .mx-4 {
-  margin-right: 0 !important;
+.section {
+  right: 0;
+  margin-left: auto !important;
 }
-h3.box-amount {
-  margin: 0;
-  width: 54.95px !important;
-  height: 30px !important;
-}
-.amount-wrapper .amount-wrapper-2 {
-  float: left;
-  width: 54.95px !important;
-  height: 30px !important;
-}
-.amount-wrapper-2 {
-  width: 54.95px !important;
-  height: 54px !important;
-}
-
-#map {
-  width: 300px !important;
-} 
